@@ -29,3 +29,4 @@ gradle-wrapper.jar
 hs_err_pid*
 
 .idea
+build/
