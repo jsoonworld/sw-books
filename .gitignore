@@ -1,0 +1,31 @@
+# Compiled Java classes
+*.class
+
+# Log and data files
+*.log
+
+# Gradle files
+.gradle
+/build/
+
+# Gradle Wrapper files (jar file should be committed)
+gradle-wrapper.jar
+
+# IntelliJ IDEA files
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# Mac OS X
+.DS_Store
+
+# Eclipse files
+.classpath
+.project
+.settings/
+
+# Virtual Machine Crash Logs (from Java)
+hs_err_pid*
+
+.idea
