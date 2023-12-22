@@ -46,14 +46,14 @@
 
 첫 번째로 메서드 참고 method reference라는 새로운 자바 8의 기능을 소개한다.
 
-```java
+
 File[] hiddenFiles = new File(".").listFiles(File::isHidden);
 이미 isHidden이라는 함수는 준비되어 있으므로 자바 8의 메서드 참조method reference :: 를 이용해서 listFiles에 직접 전달할 수 있다. 여기서 메서드가 아닌 함수라는 용어를 사용했다는 사실도 주목하자. 기존에 비해 문제 자체를 더 직접적으로 설명한다는 점이 자바 8 코드의 장점이다.
 
 ## 람다 : 익명 함수 🧩
 자바 8에서는 (기명 named) 메서드를 일급값으로 취급할 뿐 아니라 람다(또는 익명 함수 anonymous function)를 포함하여 함수도 값으로 취급할 수 있다.
 
-```java
+
 (int x) -> x + 1
 
 즉 ‘x’라는 인수로 호출하면 x+1을 반환’하는 동작을 수행하도록 코드를 구현할 수 있다.
