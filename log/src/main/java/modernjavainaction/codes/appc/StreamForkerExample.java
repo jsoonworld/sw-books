@@ -7,7 +7,6 @@ import java.util.*;
 import java.util.stream.*;
 
 import modernjavainaction.codes.chap06.Dish;
-import modernjavainaction.chap06.*;
 
 public class StreamForkerExample {
 
