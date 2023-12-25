@@ -84,21 +84,21 @@ File[] hiddenFiles = new File(".").listFiles(File::isHidden);
 
 다음은 순차 처리 방식의 코드 예시입니다.
 
-```java
+
 import static java.util.stream.Collectors.toList;
 List<Apple> heavyApples = 
     inventory.stream().filter((Apple a) -> a.getWeight() > 150).collect(toList());
 
 다음은 병렬 처리 방식의 코드 예시입니다.
 
-```java
+
 import static java.util.stream.Collectors.toList;
 List<Apple> heavyApples =
     inventory.parallelStream().filter((Apple a) -> a.getWeight() > 150).collect(toList());
 
 ## 1.5 디폴트 메서드와 자바 모듈 🔄
 
-```java
+
 List<Apple> heavyApples1 =
     inventory.stream().filter((Apple a) -> a.getWeight() > 150).collect(toList());
 List<Apple> heavyApples2 =
@@ -108,7 +108,7 @@ List<Apple> heavyApples2 =
 예를 들어 자바 8에서는 List에 직접 sort 메서드를 호출할 수 있다. 이는 자바 8의 List 인터페이스에
 다음과 같은 디폴트 메서드 정의가 추가되었기 때문이다.
 
-```java
+
 default void sort(Comparator<? super E> c) {
     Collections.sort(this, c);
 }
